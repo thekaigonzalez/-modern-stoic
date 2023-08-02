@@ -1,0 +1,155 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    width:auto;
+    height: 5000px;
+}
+
+body {
+  background-color: #333333;
+  background-image: url(https://img1.cgtrader.com/items/2848158/223e0cba1d/large/an-ancient-greek-palace-3d-model-fbx-stl.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  /*background-repeat: no-repeat;*/
+  background-size: 1200px auto;
+  /*background-filter: */
+  
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 5em;
+  scroll-behavior: smooth;
+}
+
+p,
+li,
+a {
+  font-size: 17px;
+  text-shadow: 1px 1px 10px #2f2f2f;
+  /*text-align: center;*/
+}
+
+h2,
+h1 {
+  font-size: 30px;
+  text-shadow: 1px 1px 10px #343434;
+  /*text-align: center;*/
+}
+
+a {
+  /*text-align: center;*/
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+/* hr {
+  border-top: 1px solid #252525;
+} */
+
+.floating {
+  animation-name: floating;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate(1deg);
+  }
+
+  40% {
+    transform: rotate(-1deg);
+  }
+
+  60% {
+    transform: rotate(1deg);
+  }
+
+  80% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+#first_body,
+#second_body {
+  box-shadow: 1px 4px 30px #212121;
+  /* animation: floating 5s ease-in-out infinite; */
+  width: 300px;
+  transition: transform 1s;
+  /* Animation */
+  margin: 10px;
+}
+
+#first_body:hover,
+#second_body:hover {
+  transform: scale(1.02);
+}
+
+img {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+#first_body {
+  background-color: #404040;
+  border-radius: 25px;
+  padding: 1em;
+  float: left;
+  /*position: absolute;*/
+}
+
+
+#second_body {
+  background-color: #404040;
+  border-radius: 25px;
+  padding: 1em;
+  float: right;
+  /*display: inline;*/
+  /*margin: 10px;*/
+}
+
+.grey {
+  filter: grayscale();
+}
+
+img {
+  /*width: 150px;*/
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+a {
+  box-shadow: inset 0 0 0 0 #ababab;
+  color: #ababab;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+a:hover {
+  box-shadow: inset 400px 0 0 0 #ff8080;
+  color: white;
+}
