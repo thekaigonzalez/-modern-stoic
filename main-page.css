@@ -2,15 +2,17 @@ html {
   /* note: pencilcode does not support this attribute */
   scroll-behavior: smooth;
 }
-html, body {
-  width:  auto;
+
+html,
+body {
+  width: auto;
   height: auto;
   padding: 3em;
   /* display: inline; */
 }
 
 .clear {
-  clear: left;
+  clear: both;
 }
 
 body {
@@ -42,7 +44,7 @@ h1 {
   text-shadow: 1px 1px 10px #343434;
 }
 
-h2{
+h2 {
   font-size: 20px;
   text-shadow: 1px 1px 10px #343434;
 }
@@ -85,8 +87,7 @@ a {
   box-shadow: 1px 4px 30px #212121;
   width: 300px;
   transition: transform 1s;
-  margin-top: 30px;
-  display: inline-block;
+  top: -100px;
 }
 
 #first_body:hover,
@@ -98,17 +99,35 @@ a {
   background-color: #404040;
   border-radius: 25px;
   padding: 1em;
-  float: left;
-  overflow: hidden
+  overflow: auto;
+  /* box-sizing: border-box; */
+  /* width: 25%; */
 }
 
+#left-side {
+  display: inline;
+  margin-top: 40px;
+  float: left;
+}
+
+#right-side {
+  float: right;
+  margin-top: 40px;
+  display: inline;
+}
 
 #second_body {
   background-color: #404040;
   border-radius: 25px;
   padding: 1em;
   float: right;
-  overflow: hidden;
+  
+
+  /* overflow: auto; */
+  /* position: relative; */
+  /* box-sizing: border-box; */
+
+  /* width: 25%; */
 }
 
 .grey {
