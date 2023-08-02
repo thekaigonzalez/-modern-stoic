@@ -1,26 +1,31 @@
 html {
+  /* note: pencilcode does not support this attribute */
   scroll-behavior: smooth;
 }
-
 html, body {
-    width:auto;
-    height: 5000px;
+  width:  auto;
+  height: auto;
+  padding: 3em;
+  /* display: inline; */
+}
+
+.clear {
+  clear: left;
 }
 
 body {
-  background-color: #333333;
   background-image: url(https://img1.cgtrader.com/items/2848158/223e0cba1d/large/an-ancient-greek-palace-3d-model-fbx-stl.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  /*background-repeat: no-repeat;*/
-  background-size: 1200px auto;
-  /*background-filter: */
-  
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 5em;
+  background-size: cover;
+  /* main backdrop blur */
+  /* backdrop-filter: blur(8px); */
+  /* -webkit-backdrop-filter: blur(8px); */
+
+  /* also adding scroll behaviour onto this */
   scroll-behavior: smooth;
+
 }
 
 p,
@@ -31,15 +36,19 @@ a {
   /*text-align: center;*/
 }
 
-h2,
+
 h1 {
   font-size: 30px;
   text-shadow: 1px 1px 10px #343434;
-  /*text-align: center;*/
 }
 
+h2{
+  font-size: 20px;
+  text-shadow: 1px 1px 10px #343434;
+}
+
+
 a {
-  /*text-align: center;*/
   text-decoration: none;
   color: #ebebeb;
 }
@@ -71,36 +80,13 @@ a {
   }
 }
 
-@keyframes swing {
-  20% {
-    transform: rotate(1deg);
-  }
-
-  40% {
-    transform: rotate(-1deg);
-  }
-
-  60% {
-    transform: rotate(1deg);
-  }
-
-  80% {
-    transform: rotate(-1deg);
-  }
-
-  100% {
-    transform: rotate(1deg);
-  }
-}
-
 #first_body,
 #second_body {
   box-shadow: 1px 4px 30px #212121;
-  /* animation: floating 5s ease-in-out infinite; */
   width: 300px;
   transition: transform 1s;
-  /* Animation */
-  margin: 10px;
+  margin-top: 30px;
+  display: inline-block;
 }
 
 #first_body:hover,
@@ -108,17 +94,12 @@ a {
   transform: scale(1.02);
 }
 
-img {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-}
-
 #first_body {
   background-color: #404040;
   border-radius: 25px;
   padding: 1em;
   float: left;
-  /*position: absolute;*/
+  overflow: hidden
 }
 
 
@@ -127,18 +108,11 @@ img {
   border-radius: 25px;
   padding: 1em;
   float: right;
-  /*display: inline;*/
-  /*margin: 10px;*/
+  overflow: hidden;
 }
 
 .grey {
   filter: grayscale();
-}
-
-img {
-  /*width: 150px;*/
-  -webkit-filter: drop-shadow(5px 5px 5px #222);
-  filter: drop-shadow(5px 5px 5px #222);
 }
 
 a {
