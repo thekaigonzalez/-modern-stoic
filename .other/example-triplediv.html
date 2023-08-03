@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <title>Examples of three dividers</title>
+    <style>
+        /* the body */
+        body {
+            /* background colour to white */
+            background-color: white;
+
+            /* align all the text to the centre */
+            text-align: center;
+
+            /* change the font family */
+            font-family: 'SF Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            /* pad the body */
+            padding: 15em;
+        }
+
+        /* this is purely aesthetic */
+        .container_divider {
+            /* padding on the main container */
+            padding: 1.5em;
+
+            /* change the background color to less white */
+            background-color: rgb(233, 233, 233);
+
+            /* round corners */
+            border-radius: 15px;
+
+            /* add a box shadow because i like them (SHUT UP ABOUT IT) */
+            box-shadow: 1px 1px 10px rgb(138, 138, 138);
+        }
+
+        /* all three sided dividers have padding and a red background, main divider has a green background */
+        .left_divider,
+        .middle_divider,
+        .right_divider {
+            background-color: red;
+            /* just a color change to tell differences */
+            /* padding to push the text inward */
+            padding: 1em;
+        }
+
+        /* float the right divider.. well to the right */
+        .right_divider {
+            float: right;
+            /* float this to the right, it will show on the right*/
+            width: 100px;
+            /*all the widths are the same*/
+        }
+
+        /* left divider floats to the left */
+        .left_divider {
+            float: left;
+            /* float this to the left, it will show up on the left */
+            width: 100px;
+            /* same width 100px */
+        }
+
+        /* the middle divider doesn't float anywhere, it is naturally placed in the middle because its
+        margin is 0 */
+        .middle_divider {
+            margin: 0 auto;
+            /* set margin to 0, if you dont this will look weird to the left because it has to be centered */
+            width: 100px;
+            /* 100px width (same as everything else) */
+        }
+
+        /* the main divider doesn't do much it's only for show to make it look structured */
+        .main_divider {
+            background-color: green;
+            /* green background */
+            padding: 1em;
+            /* change this for more padding on green titles */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container_divider">
+        <h1>One Type of Website Layout</h1>
+
+        <br>
+
+        <p>This website demonstrates a basic layout where there is one big divider, with three smaller ones to the left,
+            right, and the middle.
+            <br><br>
+            This was quite easy to implement, you float both the right and left one to their respective directions, you
+            set the middle one's margin to zero, and you simply place it after the declarations of the right and left
+            ones, the middle one can not go in the middle of the declarations, it must be the last one.
+        </p>
+
+        <hr> <!-- the start of the layout :) -->
+
+        <div class="main_divider">
+            <h1>Welcome to my website!</h1>
+        </div>
+        <div class="left_divider">
+            <h1>Left Divider</h1>
+        </div>
+        <div class="right_divider">
+            <h1>Right Divider</h1>
+        </div>
+        <div class="middle_divider">
+            <h1>Middle Divider</h1>
+        </div>
+    </div>
+</body>
+
+</html>
