@@ -99,14 +99,18 @@ a {
 #second_body {
   box-shadow: 1px 4px 30px #212121;
   width: 300px;
-  transition: transform 1s;
+  transition: transform ease-in-out 1s;
   top: -100px;
-  animation: superman-fly-right ease-out 1s forwards;
+  animation: superman-fly-right ease-out 1s none;
 }
 
 #first_body:hover,
 #second_body:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+}
+
+img {
+  overflow: hidden;
 }
 
 .buttona {
@@ -125,7 +129,9 @@ a {
   float: right;
 }
 
-
+img {
+  animation: superman-fly-right ease-out 1s forwards, floating ease-in-out 10s infinite forwards;
+}
 
 #first_body {
   background-color: #404040;
@@ -147,6 +153,7 @@ a {
   margin-top: 40px;
   display: inline;
 }
+
 
 #second_body {
   background-color: #404040;
